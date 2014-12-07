@@ -6,10 +6,10 @@ ifeq ($(DEB_HOST_ARCH_OS),hurd)
 endif
 
 %:
-	dh $@ --with systemd,autoreconf --parallel
+	dh $@ --with autoreconf --parallel
 
 override_dh_auto_configure:
-	dh_auto_configure -- $(EXTRA_CONFIGURE_ARGS) --with-systemdsystemunitdir=/lib/systemd/system --enable-usbdropdir=/usr/lib/pcsc/drivers $(shell dpkg-buildflags --export=configure)
+	dh_auto_configure -- $(EXTRA_CONFIGURE_ARGS) --enable-usbdropdir=/usr/lib/pcsc/drivers $(shell dpkg-buildflags --export=configure)
 
 override_dh_strip:
 	dh_strip --dbg-package=libpcsclite1-dbg

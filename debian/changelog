@@ -1,3 +1,9 @@
+pcsc-lite (1.8.13-1+vua1) unstable; urgency=medium
+
+  * Rebuild without systemd support
+
+ -- Dimitri Puzin <max@psycast.de>  Sun, 07 Dec 2014 15:00:06 +0100
+
 pcsc-lite (1.8.13-1) unstable; urgency=medium
 
   * New upstream release
