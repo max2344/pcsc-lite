@@ -1,0 +1,3 @@
+version=3
+https://alioth.debian.org/frs/?group_id=30105 \
+	.*/pcsc-lite-(\d.*)\.(?:tgz|tar\.(?:gz|bz2|xz))
